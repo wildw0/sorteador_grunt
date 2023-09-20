@@ -1,0 +1,62 @@
+@mainFont: Roboto, sans-serif;
+@secFont: Lobster, cursive;
+@corText: #fff;
+@bgCor: #eb3b5a;
+@btnCor: #000;
+@btnGgCor:#f7b731;
+
+body {
+    background-color: @bgCor;
+    font-family: @mainFont;
+    color: @corText;
+}
+
+h1 {
+    font-family: @secFont;
+    font-size: 3em;
+}
+
+main{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto; //para centralizar na horizontal
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    padding: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-top: 16px;
+    border-radius: 8px;
+    background-color: @btnGgCor;
+    color: @btnCor;
+    font-family: @mainFont;
+}
+
+input {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 2em;
+    max-width: 120px;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    color: @corText;
+    border-bottom: 6px solid #fff;
+}
+
+.resultado {
+    padding: 16px;
+    margin-top: 120px;
+    border: 8px dotted #fff;
+    display: none;
+
+    span {
+        font-weight: bold;
+        font-size: 3em;
+        display: block;
+    }
+}
